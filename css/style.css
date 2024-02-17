@@ -1,0 +1,123 @@
+html,body{
+  height: 100%;
+}
+
+body{
+  background-color: var(--white);
+}
+
+button{
+  cursor: pointer;
+}
+main{
+  min-height: unset;
+}
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+:root {
+  --secondary-color: #d57a28;
+  --white: #FCFDFF;
+  --white-100: #FEFEFF;
+  --white-500: #F5F8FE;
+  --white-700: #D5E8EA;
+  --gray: #575D63;
+  --gray-600: #555D64;
+  --gray-800: #363C41;
+  --green: #0CA05E;
+  --aqua-marine: #82B1B4;
+  --orange: #DA8A40
+}
+
+
+
+.container{
+  width: 768;
+  padding-bottom: 5rem;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+ 
+  
+  
+}
+.container__description{
+  width: 303px;
+  height: 477px; 
+  
+
+}
+
+.Container__description__logo{
+  width: 113px;
+  margin-top: 2.625rem;
+}
+
+
+.container__description__challe-one{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+  
+}
+
+.container__description__challe-one__logo{
+  width: 113px;
+}
+
+.container__line{
+  display: block;
+  height: 30px;
+  width: 1px;
+  background:#575d63 ;
+}
+
+.container__description__one-logo{
+  width: 69px;
+}
+
+.contaienr__title{
+  margin: 1rem 0 1.5rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color:#575d63 ;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.destaque{
+  width: 204px;
+  height: 84px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: var(--green);
+}
+
+
+.btn__link{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 303px;
+  
+  
+}
+.btn__enter{     
+    background: var(--green);
+    padding: 1rem ;  
+    text-align: center;  
+    font-weight: 700;
+    font-family: "Inter",sans-serif;
+    font-size: .875rem;
+    border-radius: 4px;
+    background-color: var(--green);
+    color: var(--white);
+    text-transform: uppercase;    
+}

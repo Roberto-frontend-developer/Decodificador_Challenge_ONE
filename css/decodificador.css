@@ -1,0 +1,221 @@
+*{
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+:root {
+  --light-blue-100: #f3f5fc;
+  --light-blue-200: #eff1fa;
+  --light-blue-300: #e9ecf8;
+  --light-blue-400: #aab2d5;
+  --light-blue-500: #757fb2;
+  --dark-blue-100: #609ed4;
+  --dark-blue-200: #356ea9;
+  --dark-blue-300: #0a3871;
+  --dark-blue-400: #072b61;
+  --dark-blue-500: #052051;
+  --gray-100: rgba(206, 212, 218, 0.596);
+  --gray-200: #adb5bd;
+  --gray-400: #495057;
+  --gray-500: #868e96;
+  --gray-600: #343a40;
+}
+
+
+body{
+  background: var(--light-blue-100);
+}
+h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark-blue-400);
+ }
+
+ p{
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px  0;
+  color: var(--gray-400);
+
+ }
+
+header{  
+  width: 100%;
+  padding: 1rem 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  & h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+  }
+}
+
+main{  
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1280px;
+
+  & textarea{
+    background: transparent;
+    appearance: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--dark-blue-300);
+    outline: none;
+    width: 90%;
+    resize: none;
+    line-height: 1.5rem;
+    max-height: 10em;
+    
+    @media(max-width:426px) {
+      width: 90%;      
+    }
+    &::placeholder{
+      color: var(--dark-blue-300);
+    }
+  }
+}
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  max-width: 600px;
+  width: 75%;
+  justify-content: space-between;
+  padding: 2rem 0;
+  height: 95%;
+
+  @media(max-width: 1024px) {
+    margin: 0 auto;
+    width: 90%;
+    height: 55vh;
+    align-items: center;
+  }
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.7rem;
+    
+    @media(max-width: 1024px){
+      align-items: center;
+    }
+
+    & span {
+      color: var(--gray-400);
+
+      &::before {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        background-image: url(/assets/ponto-de-exclamacao.png);
+        width: 16px;
+        height: 16px;
+        margin:  0 4px;
+      }
+    }
+
+    & div{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      @media(max-width: 426px){
+        justify-content: center;
+      }
+    }
+  }
+}
+button{
+  appearance: none;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1vw 6vw;
+  
+  @media (min-width){
+    padding: 1rem 5rem;
+  }
+  min-width: 45%;
+}
+
+button.encrypt{
+  background: var(--dark-blue-400);
+  border: 1px solid var(--dark-blue-300);
+  color: rgba(255, 255, 255, 0.85);
+
+  &:hover{
+    background: var(--dark-blue-300);
+  }
+}
+
+button.decrypt{
+  background: transparent;
+  border: 1px solid var(--dark-blue-300);
+  color: var(--dark-blue-300);
+
+  &:hover {
+    background:  var(--light-blue-300);
+  }
+}
+
+button.copy {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--dark-blue-300);
+  color: var(--dark-blue-300);
+}
+
+button.invisible{
+  display: none;
+}
+
+
+aside{
+  background-color:var(--light-blue-100);
+  border-radius: 1.5rem;
+  color: var(--gray-400);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 100%;
+  min-height: 60vh;
+
+  img{
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  @media(max-width: 1024px) {
+    max-width: 90vh;
+    img{
+      display: none;
+    }
+  }
+}
+p#description{
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  text-align: center;
+  width: 100%;
+}
+
